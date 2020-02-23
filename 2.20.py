@@ -58,6 +58,14 @@ def FindRepeats():
     else:
         print("There are", RepeatCount, "repeated UserIDs.")
 #s19-21-Q3
+TotalValue = 0
+ZeroCount = 0
+for Index in range(100):
+    TotalValue += Result[Index]
+    if Result[Index] == 0.0:
+        ZeroCount += 1
+print("The average is ",TotalValue/100)
+print("The number of elements with a zero value is ",ZeroCount)
 
     
     
